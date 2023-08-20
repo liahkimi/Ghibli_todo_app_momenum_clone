@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Momentum App</title>
+  </head>
+  <body>
+    <img id="bgImg" src="" alt="" />
+    <h1 id="clock">00:00</h1>
+    <form id="login-form" class="hidden">
+      <!-- 유효성검사는 form태그 안의 input인 경우만 가능 -->
+      <input
+        required
+        maxlength="15"
+        type="text"
+        placeholder="What is your name?"
+      />
+      <!--<input type="submit" value="Log In" />-->
+    </form>
+    <h2 id="greeting" class="hidden"></h2>
+    <form id="todo-form">
+      <input type="text" placeholder="What will you do today?" required />
+    </form>
+    <ul id="todo-list"></ul>
+    <div id="quote">
+      <span class="quote"></span>
+      <span class="author"></span>
+    </div>
+    <div id="weather">
+      <!--<span></span>-->
+      <span><img /></span>
+      <span></span>
+    </div>
+    <iframe
+      width="200"
+      height="200"
+      src="https://www.youtube.com/embed/QRvjLoxIuOU/autoplay=1&mute=1"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>
